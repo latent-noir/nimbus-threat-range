@@ -1,0 +1,9 @@
+{
+    "name": "cloud-simulator",
+    "version": "1.0.0",
+    "private": true,
+    "devDependencies": {
+        "@tailwindcss/postcss": "^4",
+        "tailwindcss": "^4"
+    }
+}
