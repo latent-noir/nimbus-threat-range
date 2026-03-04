@@ -64,20 +64,20 @@ Unlike static labs or CTF challenges, this simulator runs a **continuous, event-
 ```
   ┌──────────────────────────────────────────────────────────────┐
   │                                                              │
-  │   1. SIMULATES  →  Cloud infrastructure (VMs, containers,   │
+  │   1. SIMULATES  →  Cloud infrastructure (VMs, containers,    │
   │                     networks) with realistic resource drift  │
   │                                                              │
   │   2. ATTACKS    →  5 cyber attack vectors injected in real   │
   │                     time (DDoS, brute-force, ransomware...)  │
   │                                                              │
-  │   3. DETECTS    →  IDS with 7+ rules + behavioral anomaly   │
-  │                     analysis hunts threats autonomously       │
+  │   3. DETECTS    →  IDS with 7+ rules + behavioral anomaly    │
+  │                     analysis hunts threats autonomously      │
   │                                                              │
   │   4. DEFENDS    →  Stateless firewall enforces security      │
   │                     policies with ALLOW/DENY/LOG actions     │
   │                                                              │
-  │   5. OBSERVES   →  Real-time dashboards, structured logs,   │
-  │                     audit trails, and time-series metrics     │
+  │   5. OBSERVES   →  Real-time dashboards, structured logs,    │
+  │                     audit trails, and time-series metrics    │
   │                                                              │
   └──────────────────────────────────────────────────────────────┘
 ```
