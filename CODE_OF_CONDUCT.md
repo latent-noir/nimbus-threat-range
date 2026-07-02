@@ -1,4 +1,4 @@
-# 📜 Code of Conduct
+#  Code of Conduct
 
 > *"In cyberspace, trust is earned — never assumed."*
 
@@ -10,7 +10,7 @@ We pledge to make participation in this community a harassment-free experience f
 
 ## Standards
 
-### ✅ Expected
+###  Expected
 
 - Welcoming and inclusive language
 - Respectful disagreement and constructive criticism
@@ -18,7 +18,7 @@ We pledge to make participation in this community a harassment-free experience f
 - Responsible disclosure of vulnerabilities
 - Helping others learn and grow
 
-### ❌ Unacceptable
+###  Unacceptable
 
 - Harassment, trolling, or personal attacks
 - Sexualized language, imagery, or unwanted advances
