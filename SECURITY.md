@@ -55,4 +55,4 @@ If adapting this for a production environment:
 
 ---
 
-<p align="center"><sub>🔒 Responsible disclosure keeps the ecosystem safe.</sub></p>
+<p align="center"><sub> Responsible disclosure keeps the ecosystem safe.</sub></p>
