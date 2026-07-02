@@ -1,4 +1,4 @@
-# 🤝 Contributing
+#  Contributing
 
 > *Every exploit patched makes the internet a little safer.*
 
@@ -51,11 +51,11 @@ Types: `feat` · `fix` · `docs` · `style` · `refactor` · `test` · `chore`
 
 ## Areas We Need Help
 
-- 🛡️ New IDS detection rules and anomaly detectors
-- ⚔️ Additional attack vector simulations
-- 📊 Dashboard visualizations and UI enhancements
-- 🧪 Expanded test coverage
-- 📖 Documentation and tutorials
+-  New IDS detection rules and anomaly detectors
+-  Additional attack vector simulations
+-  Dashboard visualizations and UI enhancements
+-  Expanded test coverage
+-  Documentation and tutorials
 
 ## Code of Conduct
 
