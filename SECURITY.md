@@ -1,15 +1,9 @@
-# 🔐 Security Policy
+#  Security Policy
 
 > *"Security is not a product, but a process."* — Bruce Schneier
 
-## Supported Versions
 
-| Version | Status |
-|---------|--------|
-| 2.0.x   | ✅ Actively maintained |
-| < 2.0   | ❌ End of life |
-
-## ⚠️ Important Disclaimer
+##  Important Disclaimer
 
 This project is an **educational cyber simulation platform**. It simulates attacks in a **controlled, local environment** for learning purposes. It is **not** designed for production deployment, penetration testing against real systems, or any unauthorized activity.
 
