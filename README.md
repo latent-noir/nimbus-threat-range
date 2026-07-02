@@ -36,7 +36,7 @@
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Overview](#-overview)
 - [Why This Project?](#-why-this-project)
@@ -53,11 +53,9 @@
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 **Nimbus Threat Range** is a comprehensive, multi-layered platform that simulates a **real cloud environment** — complete with VMs, containers, and virtual networks — and lets you **attack it, defend it, and observe everything in real time**.
-
-Unlike static labs or CTF challenges, this simulator runs a **continuous, event-driven simulation loop** where infrastructure degrades, resources drift, attacks propagate through the system, and defensive layers (IDS, Firewall) react autonomously. Everything is observable through premium dashboards and a real-time WebSocket feed.
 
 ### What It Does
 
@@ -84,7 +82,7 @@ Unlike static labs or CTF challenges, this simulator runs a **continuous, event-
 
 ---
 
-## 🎯 Why This Project?
+##  Why This Project?
 
 ### The Problem
 
@@ -103,19 +101,8 @@ This simulator provides a **zero-risk, fully instrumented cyber lab** running on
 | **Build SOC workflows** | Live dashboards simulating Security Operations Center monitoring |
 | **Showcase engineering skills** | Full-stack, multi-language, event-driven production architecture |
 
-### Who Is This For?
 
-```
-  [■] 🎓 Students          — Learn cloud security concepts, hands-on
-  [■] 🔬 Researchers       — Test detection algorithms against simulated threats
-  [■] 💼 SOC Analysts      — Practice incident response and threat triage
-  [■] 🏗️ Engineers         — Study event-driven architecture and async systems
-  [■] 📁 Portfolio          — FAANG-grade security engineering showcase
-```
-
----
-
-## 🏗 Architecture
+##  Architecture
 
 ### System Overview
 
@@ -265,9 +252,9 @@ graph LR
 
 ---
 
-## ✨ Core Capabilities
+##  Core Capabilities
 
-### ⚙️ Simulation Engine
+###  Simulation Engine
 
 | Feature | Description |
 |---------|-------------|
@@ -276,7 +263,7 @@ graph LR
 | **Resource Drift** | CPU, memory, and network metrics fluctuate with realistic random walks per tick |
 | **State Snapshots** | Full system state exportable as JSON at any point for analysis |
 
-### 🖥️ Infrastructure
+###  Infrastructure
 
 | Feature | Description |
 |---------|-------------|
@@ -285,7 +272,7 @@ graph LR
 | **Networks** | Virtual networks with CIDR-allocated subnets and dynamic topology |
 | **Resource Modeling** | Realistic CPU/memory drift simulates production workload patterns |
 
-### 🛡️ Security
+###  Security
 
 | Feature | Description |
 |---------|-------------|
@@ -298,16 +285,16 @@ graph LR
 | **Stateless Firewall** | Configurable rules matching source, destination, port, and protocol with ALLOW/DENY/LOG |
 | **Attack Engine** | 5 attack vectors (DDoS, brute-force, ransomware, SQL injection, privilege escalation) with configurable severity (1-100) and duration |
 
-### 📊 Dashboards & Interfaces
+###  Dashboards & Interfaces
 
 | Interface | Technology | Capabilities |
 |-----------|------------|--------------|
-| **Web Dashboard** | Next.js 16 + React 19 | Premium dark-mode UI with 5 tabs: Overview, Events, IDS, Audit, Network Topology |
+| **Web Dashboard** | Next.js 16 + React 19 | A dark-mode UI with 5 tabs: Overview, Events, IDS, Audit, Network Topology |
 | **Streamlit Dashboard** | Streamlit + Plotly | Lightweight monitoring with live CPU charts, attack status, topology visualization |
 | **Attack CLI** | Typer + Rich | Terminal-based reconnaissance (`scan`), targeted attacks (`attack`), and mass assault (`ddos`) |
 | **Swagger Docs** | FastAPI auto-gen | Interactive API documentation at `/docs` |
 
-### 📈 Observability
+###  Observability
 
 | Feature | Description |
 |---------|-------------|
@@ -318,7 +305,7 @@ graph LR
 
 ---
 
-## 🧰 Full Tech Stack
+##  Full Tech Stack
 
 <table>
 <tr>
@@ -382,7 +369,7 @@ graph LR
 
 ---
 
-## ⚡ Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -408,8 +395,8 @@ python main.py
 ```
 
 ```
-✅ API Server   → http://localhost:8000
-📖 Swagger Docs → http://localhost:8000/docs
+ API Server   → http://localhost:8000
+ Swagger Docs → http://localhost:8000/docs
 ```
 
 ### 3 — Start the Web Dashboard
@@ -421,7 +408,7 @@ npm run dev
 ```
 
 ```
-🌐 Dashboard → http://localhost:3000
+ Dashboard → http://localhost:3000
 ```
 
 ### 4 — (Optional) Streamlit Dashboard
@@ -432,7 +419,7 @@ streamlit run dashboard/app.py
 ```
 
 ```
-📊 Monitoring → http://localhost:8501
+ Monitoring → http://localhost:8501
 ```
 
 ### 5 — (Optional) Attack CLI
@@ -440,16 +427,16 @@ streamlit run dashboard/app.py
 ```bash
 cd attacks
 pip install -r requirements.txt
-python main.py scan              # 🔍 Reconnaissance — list all targets
-python main.py attack c-000-00   # 🎯 Targeted strike on a container
-python main.py ddos              # 💥 Full DDoS assault on all targets
+python main.py scan              #  Reconnaissance — list all targets
+python main.py attack c-000-00   #  Targeted strike on a container
+python main.py ddos              #  Full DDoS assault on all targets
 ```
 
-> ⚠️ **The core engine must be running before launching any frontend or CLI tool.**
+>  **The core engine must be running before launching any frontend or CLI tool.**
 
 ---
 
-## 📡 API Reference
+##  API Reference
 
 All endpoints are prefixed with `/simulation`. Full interactive docs available at `http://localhost:8000/docs`.
 
@@ -466,7 +453,7 @@ All endpoints are prefixed with `/simulation`. Full interactive docs available a
 | `/ws` | `WebSocket` | Real-time state streaming + live command injection |
 
 <details>
-<summary><strong>📡 WebSocket Protocol</strong></summary>
+<summary><strong> WebSocket Protocol</strong></summary>
 
 ```json
 // Request current state
@@ -490,79 +477,79 @@ All endpoints are prefixed with `/simulation`. Full interactive docs available a
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 cloud-simulator/
 │
-├── core/                           # 🐍 Python — Simulation Engine
+├── core/                          
 │   ├── api/
-│   │   ├── routes.py              #    REST API endpoints (8 routes)
-│   │   └── websocket.py           #    Real-time WebSocket streaming
+│   │   ├── routes.py              
+│   │   └── websocket.py           
 │   ├── engine/
-│   │   ├── engine.py              #    SimulationEngine — top-level orchestrator
-│   │   ├── clock.py               #    Discrete simulation clock (tick-based)
-│   │   └── event_bus.py           #    Async pub/sub with priority queue
+│   │   ├── engine.py              
+│   │   ├── clock.py               
+│   │   └── event_bus.py           
 │   ├── events/
-│   │   ├── base.py                #    BaseEvent — immutable Pydantic model
-│   │   ├── attack_events.py       #    Attack domain events + AttackType enum
-│   │   ├── infra_events.py        #    ResourceSpike, NetworkFailure, ContainerCrash
-│   │   └── security_events.py     #    IDSAlert, FirewallBlock + ThreatLevel enum
+│   │   ├── base.py                
+│   │   ├── attack_events.py       
+│   │   ├── infra_events.py        
+│   │   └── security_events.py     
 │   ├── infrastructure/
-│   │   ├── models.py              #    VM, Container, Network, Subnet data models
-│   │   ├── vm_manager.py          #    VM lifecycle + compromise tracking
-│   │   ├── container_manager.py   #    Container drift + crash recovery
-│   │   └── network_manager.py     #    Subnet management + topology
+│   │   ├── models.py              
+│   │   ├── vm_manager.py          
+│   │   ├── container_manager.py   
+│   │   └── network_manager.py     
 │   ├── security/
-│   │   ├── ids.py                 #    Intrusion Detection System (7+ rules)
-│   │   ├── firewall.py            #    Stateless packet filter
-│   │   └── attack_engine.py       #    5 attack vector simulations
+│   │   ├── ids.py                 
+│   │   ├── firewall.py            
+│   │   └── attack_engine.py       
 │   ├── logging_layer/
-│   │   ├── log_config.py          #    Structured JSON logging setup
-│   │   ├── event_logger.py        #    Domain-routed event recording
-│   │   ├── metric_store.py        #    Time-series ring buffer storage
-│   │   └── audit_trail.py         #    Append-only security audit log
+│   │   ├── log_config.py          
+│   │   ├── event_logger.py        
+│   │   ├── metric_store.py        
+│   │   └── audit_trail.py         
 │   ├── tests/
-│   │   └── test_engine.py         #    Engine integration tests
-│   ├── main.py                    #    FastAPI entry point
+│   │   └── test_engine.py         
+│   ├── main.py                    
 │   └── requirements.txt
 │
-├── web/                            # ⚛️ Next.js 16 — Premium Dashboard
+├── web/                            
 │   ├── src/
 │   │   ├── app/
-│   │   │   ├── layout.tsx         #    Root layout — dark theme + fonts
-│   │   │   ├── page.tsx           #    Main dashboard (5 tabs)
-│   │   │   └── globals.css        #    Design system + animations
-│   │   ├── components/ui/         #    Reusable UI components
+│   │   │   ├── layout.tsx         
+│   │   │   ├── page.tsx           
+│   │   │   └── globals.css        
+│   │   ├── components/ui/         
 │   │   └── lib/
-│   │       ├── api.ts             #    API client + WebSocket manager
-│   │       └── utils.ts           #    Formatters + helpers
+│   │       ├── api.ts             
+│   │       └── utils.ts           
 │   ├── next.config.ts
 │   └── package.json
 │
-├── attacks/                        # ⚔️ CLI — Attack Injection Tool
-│   ├── main.py                    #    Typer CLI (scan / attack / ddos)
+├── attacks/                        
+│   ├── main.py                    
 │   ├── tests/
-│   │   └── test_attacks.py        #    CLI tests with HTTP mocking
+│   │   └── test_attacks.py        
 │   └── requirements.txt
 │
-├── dashboard/                      # 📊 Streamlit — Monitoring Dashboard
-│   ├── app.py                     #    Live monitoring UI
+├── dashboard/                      
+│   ├── app.py                     
 │   └── requirements.txt
 │
-├── README.md                       # 📖 You are here
-├── SECURITY.md                     # 🔐 Vulnerability reporting policy
-├── CONTRIBUTING.md                 # 🤝 Contribution guidelines
-├── CODE_OF_CONDUCT.md              # 📜 Community standards
-├── LICENSE                         # ⚖️ MIT License
+├── README.md                       
+├── SECURITY.md                     
+├── CONTRIBUTING.md                 
+├── CODE_OF_CONDUCT.md              
+├── LICENSE                       
 └── .gitignore
 ```
 
 ---
 
-## 🔒 Security Model
+##  Security Model
 
-> ⚠️ **This is an educational simulation platform — not a production security tool.**
+>  **This is an educational simulation platform — not a production security tool.**
 > Attack endpoints are intentionally unauthenticated. **Never expose to the public internet.**
 
 | Layer | Implementation | Purpose |
@@ -590,7 +577,7 @@ If adapting this for a real environment:
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 ```bash
 # Core engine tests
@@ -617,23 +604,23 @@ python -m pytest tests/ -v
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for:
-- 🛠️ Development environment setup
-- 🧪 Testing guidelines
-- 🎨 Code style standards (PEP 8, TypeScript strict)
-- 📝 Commit conventions
+-  Development environment setup
+-  Testing guidelines
+-  Code style standards (PEP 8, TypeScript strict)
+-  Commit conventions
 
 **Areas we need help:**
-- 🛡️ New IDS detection rules and anomaly detectors
-- ⚔️ Additional attack vector simulations
-- 📊 Dashboard visualizations
-- 🧪 Expanded test coverage
+-  New IDS detection rules and anomaly detectors
+-  Additional attack vector simulations
+-  Dashboard visualizations
+-  Expanded test coverage
 
 ---
 
-## 🔐 Security Policy
+##  Security Policy
 
 See [SECURITY.md](SECURITY.md) for vulnerability reporting and responsible disclosure.
 
@@ -641,7 +628,7 @@ See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for community standards.
 
 ---
 
-## 📜 License
+##  License
 
 This project is licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
 
