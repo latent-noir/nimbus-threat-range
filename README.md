@@ -2,7 +2,7 @@
   <img src="https://img.shields.io/badge/⚡_CLASSIFIED-CYBER_SIMULATION_PLATFORM-000000?style=for-the-badge" alt="Classified">
 </p>
 
-<h1 align="center">☁️🛡️ Nimbus Threat Range</h1>
+<h1 align="center">☁️🛡️ Nimbus Threat Range — Attack & Defense Range</h1>
 
 <p align="center">
   <strong>A production-grade, event-driven cloud infrastructure and cybersecurity simulation platform.</strong><br>
